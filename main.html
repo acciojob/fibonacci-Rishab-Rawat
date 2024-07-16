@@ -4,13 +4,27 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
-</head>
+unction fibonacci(num) {
+    if (num === 0) {
+        return 0;
+    } else if (num === 1) {
+        return 0;
+    } else if (num === 2) {
+        return 1;
+    } else {
+        let a = 0, b = 1;
+        for (let i = 2; i < num; i++) {
+            let next = a + b;
+            a = b;
+            b = next;
+        }
+        return b;
+    }
+}
 
-<body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
-</body>
-
-</html>
+// Test cases
+console.log(fibonacci(1));  // Output: 0
+console.log(fibonacci(5));  // Output: 3
+console.log(fibonacci(0));  // Output: 0
+console.log(fibonacci(10)); // Output: 34
+console.log(fibonacci(50)
